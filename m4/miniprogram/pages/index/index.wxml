@@ -1,0 +1,27 @@
+<!-- <view wx="{{list}}" wx:key="list">
+  <view>状态:{{item.status}}</view>
+  <view>描述:{{item.msg}}</view>
+  <view>账号:{{item.user_name}}</view>
+  <view>姓名:{{item.nick_name}}</view>
+   <view>手机号:{{item.mobile}}</view>
+    <view>id:{{item.id}}</view>
+</view> -->
+
+
+<view class="container">
+  <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;"
+    class="list" bindscrolltolower="bindDownLoad" bindscroll="scroll" bindscrolltoupper="refresh">
+    <view class="item" wx:for="{{list}}">
+      <image class="img" src="{{item.pic_url}}"></image>
+      <view class="text">
+        <text class="title">{{item.name}}</text>
+        <text class="description">{{item.short_description}}</text>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="body-view">
+    <loading hidden="{{hidden}}" bindchange="loadingChange">
+      加载中...
+    </loading>
+  </view>
+</view>

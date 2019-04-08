@@ -1,0 +1,144 @@
+<view class="container">
+  <!-- <view class="banner">
+		<image class="" src="{{banner}}"></image>
+	</view> -->
+  <view class="block-area">
+    <view class="title">{{des}}</view>
+    <view class="block-info clearfix">
+      <view class="block-info-left">
+        <text class="vm">名额：</text>
+        <text class="color-1 vm">1000人</text>
+
+      </view>
+      <view class="block-info-right">
+        <text class="color-1 vm bold">￥2000.00</text>
+        <text class="vm">元</text>
+      </view>
+
+      <view class="block-info-left" style='margin-top:10px;'>
+        <text class="vm">比赛对方：</text>
+        <text class="color-1 vm">红蓝双方</text>
+
+      </view>
+    </view>
+  </view>
+
+  <view class="section" style="padding:0rpx 30rpx;margin-top:0px;">
+    <view class="menu-item">
+      <image class="menu-icon" src="/image/time.png"></image>
+      <view class="menu-text">
+        <text>{{time}}</text>
+      </view>
+    </view>
+
+
+    <!-- <view class="menu-item">
+            <image class="menu-icon" src="/image/tel.png"></image>
+            <view class="menu-text" bindtap="tel" data-tel="{{tel}}">
+            	<text data-tel="{{tel}}">{{tel}}</text>
+            </view>
+        </view> -->
+
+
+    <view class="menu-item">
+      <image class="menu-icon" src="/image/address.png"></image>
+      <view class="menu-text">
+        <text>{{longitude}}</text>
+      </view>
+      <!-- <map class="m-t-10" name=""  latitude="{{latitude}}" longitude="{{longitude}}" style="width:100%; height:200px;"></map> -->
+    </view>
+
+
+     <navigator url='../baoming/baoming'>
+    <view class="menu-item">
+     
+      <view class="menu-text">
+        <image class="menu-icon" src="/image/wechatHL.png"></image>
+        <image class="menu-icon" src="/image/wechatHL.png"></image>
+        <view class='qianjin' style='float:right;width:50px;height:50rpx;'>
+         <image class="menu-icon" src="/image/int.png" style='float:right;'></image>
+        </view>
+      </view>
+      <!-- <map class="m-t-10" name=""  latitude="{{latitude}}" longitude="{{longitude}}" style="width:100%; height:200px;"></map> -->
+    </view>
+</navigator>
+
+
+  <view class='xian' style='float:left;width:100%;height:1px;background:#ebebeb;'></view>
+
+
+    <view class="menu-item">
+
+      <view class="menu-text">
+        <view class="title" style='font-size:28rpx;'>活动名称：{{des}}</view>
+      </view>
+    </view>
+
+ 
+
+
+    <view class="menu-item">
+
+      <view class="menu-text">
+        <view class="title" style='font-size:28rpx;'>俱乐部：{{julebu}}</view>
+      </view>
+    </view>
+
+
+      <view class="menu-item">
+
+      <view class="menu-text">
+        <view class="title" style='font-size:28rpx;'>发起人：{{faqiren}}</view>
+      </view>
+    </view>
+
+
+     <view class="menu-item">
+
+      <view class="menu-text">
+        <view class="title" style='font-size:28rpx;'>联系电话：{{tel}}</view>
+      </view>
+    </view>
+
+ <view class='xian' style='float:left;width:100%;background:#ebebeb;'></view>
+
+
+
+  </view>
+  <view class="section">
+    <view class="section-title"  style='height:27px;line-height:27px;'>活动介绍</view>
+    <view class="m-t-10 text">
+      各位华工中山校友： 华工中山校友会即将迎来一批新人―2018年刚刚走出校园的毕业新生，为让新会员更快、更好地融入中山的工作和生活。 在此诚挚邀请师兄师姐们与新的华工中山师弟师妹欢聚一堂，认识、沟通、交流、指导、分享！ 
+      【时间】2018年8月25日（周六）9:00-12:00 
+      【地点】岭南酒家（兴中道假日广场旁国土局11楼） 
+      联系电话：13078663001校友会秘书电话 
+      华工中山校友会
+    </view>
+<view class='xian' style='float:left;width:100%;height:1px;background:#ebebeb;margin-top:20px;'></view>
+    <navigator url='../baoming/baoming'>
+    <view class="menu-item" style='margin-top:20px;'>
+     
+      <view class="menu-text">
+        <view class="section-title">活动掠影
+         <view class='qianjin' style='float:right;width:50px;height:50rpx;'>
+         <image class="menu-icon" src="/image/int.png" style='float:right;'></image>
+        </view>
+        </view>
+       
+      </view>
+      <!-- <map class="m-t-10" name=""  latitude="{{latitude}}" longitude="{{longitude}}" style="width:100%; height:200px;"></map> -->
+    </view>
+</navigator>
+<view class='xian' style='float:left;width:100%;height:1px;background:#ebebeb;'></view>
+
+  </view>
+
+
+
+
+
+  <view class="section">
+    <button type="primary" bindtap="join" style='background-color:#3190FA;'>我要报名</button>
+  </view>
+
+</view>

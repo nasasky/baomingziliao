@@ -1,0 +1,120 @@
+<!--index.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+
+
+
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>所属俱乐部</view>
+
+      <picker name="julebu" style='float：left;' bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+       {{array[index]}} 
+      </picker>
+    </view>
+
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>活动名称</view>
+      <input name="mingcheng" placeholder="请输入活动名称" />
+    </view>
+
+
+
+
+
+    <!-- <view class="section" style="background:#787878;margin:20rpx;padding:20rpx">
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker"> 国家：{{array[index]}} </view>
+          </picker>
+        </view> -->
+
+    <!-- <view class="section" style="background:#787878;margin:20rpx;padding:20rpx">
+          <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+            <view class="picker"> 时间 : {{time}} </view>
+          </picker>
+        </view> -->
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <picker  name="shijian" mode="date" value="{{date}}" start="2015-09-01" bindchange="bindDateChange">
+        <view  class="picker" style='font-size:16px;'> 报名截止: {{date}} </view>
+      </picker>
+    </view>
+
+
+
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>活动地点</view>
+      <input name="didian" placeholder="请输入活动具体地点" />
+    </view>
+
+
+     <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>报名名额</view>
+      <input name="minger" placeholder="请输入报名名额" />
+    </view>
+
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>报名费用</view>
+      <input name="feiyong" placeholder="请输入报名费用" />
+    </view>
+
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>联系电话</view>
+      <input name="dianhua" placeholder="请输入电话" />
+    </view>
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>活动内容</view>
+      <textarea name="neirong" placeholder="请输入活动内容" style='height:100px;' ></textarea> 
+    </view>
+
+
+
+
+
+    <!-- <view class="section section_gap" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:20px;'>性别</view>
+      <radio-group name="xingbie">
+        <label>
+          <radio value="男" />男</label>
+        <label>
+          <radio value="女" />女</label>
+      </radio-group>
+    </view> -->
+
+
+    <!-- <view class="section section_gap">
+      <view class="section__title" style='margin-bottom:20px;'>爱好</view>
+      <checkbox-group name="aihao">
+        <label>
+          <checkbox value="旅游" /> 旅游</label>
+        <label>
+          <checkbox value="看书" />看书</label>
+        <label>
+          <checkbox value="电动" />电动</label>
+        <label>
+          <checkbox value="篮球" />篮球</label>
+      </checkbox-group>
+    </view> -->
+
+<view class="">
+   选择提问图片:  <label bindtap="checkimg">点击选择图片</label>
+  </view>
+  <view class="">
+    <image wx:for="{{imglist}}" mode="aspectFit"   bindtap="delImg" data-index="{{index}}"data-src="{{item}}" style="width:75px;height:75px;" src="{{item}}"></image>
+  </view>
+    <view class="btn-area" >
+      <button formType="submit" style='background-color:#3190FA;color:#ffffff;width:90%;margin-left:5%;margin-top:50px;margin-bottom:50px;'>提交</button>
+      <!-- <button formType="reset" style='margin-top:20px;'>重置</button> -->
+    </view>
+
+    <view class='kongbai' style='width:100%;height:10px;'>
+    </view>
+  </form>
+
+
+</view>

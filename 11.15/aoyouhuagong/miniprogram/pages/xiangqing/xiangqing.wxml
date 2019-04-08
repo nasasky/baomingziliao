@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='tishi'>{{msg}}，请返回！</view>
+
+
+  <!-- <button formType="submit" style='background-color:#3190FA;color:#ffffff;width:90%;margin-left:5%;margin-top:300px;margin-bottom:50px;'>返回活动列表</button> -->
+</view>

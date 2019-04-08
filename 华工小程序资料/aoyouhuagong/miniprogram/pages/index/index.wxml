@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section"  style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title"style='margin-bottom:20px;'>姓名</view>
+      <input name="xingming" placeholder="请输入姓名" /> </view>
+    <view class="section section_gap"  style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:20px;'>性别</view>
+      <radio-group name="xingbie">
+        <label>
+          <radio value="男" />男</label>
+        <label>
+          <radio value="女" />女</label>
+      </radio-group>
+    </view>
+    <view class="section section_gap">
+      <view class="section__title" style='margin-bottom:20px;'>爱好</view>
+      <checkbox-group name="aihao">
+        <label>
+          <checkbox value="旅游" /> 旅游</label>
+        <label>
+          <checkbox value="看书" />看书</label>
+        <label>
+          <checkbox value="电动" />电动</label>
+        <label>
+          <checkbox value="篮球" />篮球</label>
+      </checkbox-group>
+    </view>
+    <view class="btn-area">
+      <button formType="submit">提交</button>
+      <button formType="reset" style='margin-top:20px;'>重置</button>
+    </view>
+  </form>
+
+
+</view>

@@ -1,0 +1,9 @@
+App({
+
+
+  appData: {
+    userinfo: null,
+  }
+
+
+})

@@ -1,0 +1,48 @@
+<!--pages/eg01/eg01.wxml-->
+<!-- <image src='{{pic}}'></image> -->
+<!-- <text class='category'>{{id}}</text>  -->
+
+<view class='view-container'>
+
+<view class='list-liebiao'>
+<text class='category'>{{title}}</text> 
+<text class='categorv'>名额：{{number}}人</text> 
+<text class='categorv' style='margin-left:20rpx;'>费用：<text style='color:red;'>{{cost}}</text>元</text>
+<text class='category' style=' margin-top: 20rpx;'>比赛对方：{{other_party}}</text>  
+</view>
+<view class='xian'></view>
+
+<view class='list-liebiao'>
+
+<text class='categorv'><text class="iconfont icon-shijian">{{shijian}}</text>{{begin_time}}</text> 
+
+<text class='category' style=' margin-top: 20rpx;'><text class="iconfont icon-dingwei">{{dingwei}}</text>{{address}}</text>  
+
+
+</view>
+
+<view class='xian'></view>
+<view class='list-liebiao'>
+<text class='categorv' style='margin-top:10rpx;'>参与活动人数：{{user_cont}}人</text> 
+</view>
+
+<view class='xian-a'></view>
+
+<view class='list-liebiao'>
+<text class='category'>{{title}}</text> 
+<text class='category'style=' margin-top: 20rpx;'>俱乐部：{{article_name}}</text>
+<text class='category'style=' margin-top: 20rpx;'>发起人：{{initiator}}</text> 
+
+</view>
+<view class='xian-a'></view>
+
+<view class='list-liebiao'>
+<text class='category'><text class="iconfont icon-ziyuan">{{ziyuan}}</text>活动介绍</text> 
+<text class='category'style=' margin-top: 20rpx;'>{{h_content}}</text>
+
+
+</view>
+</view>
+
+
+

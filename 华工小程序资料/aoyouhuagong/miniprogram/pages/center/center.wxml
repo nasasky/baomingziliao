@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+ <view>你好，欢迎进入会员中心</view>
+
+</view>
